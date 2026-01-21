@@ -38,8 +38,10 @@ public class MainExtension extends SFSExtension {
         registerHandler("baseclothes", BaseClothesHandler.class);
         registerHandler("savebaseclothes", SaveBaseClothesHandler.class);
         registerHandler("roomjoincomplete", RoomJoinCompleteHandler.class);
-        registerHandler("chat", ChatHandler.class);
-        registerHandler("whisper", WhisperHandler.class);
+        registerHandler("chat.public.send", PublicChatHandler.class);
+        registerHandler("chat.whisper.send", WhisperChatHandler.class);
+        registerHandler("chat", ChatHandler.class); // compatibility layer for legacy clients
+        registerHandler("whisper", WhisperHandler.class); // compatibility layer for legacy clients
         registerHandler("chatballoon", ChatBalloonHandler.class);
         registerHandler("chatext", ChatExtensions.class);
         registerHandler("cachemgr", CacheManager.class);
