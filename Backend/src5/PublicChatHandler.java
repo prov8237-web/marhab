@@ -3,7 +3,9 @@ package src5;
 import com.smartfoxserver.v2.entities.Room;
 import com.smartfoxserver.v2.entities.User;
 import com.smartfoxserver.v2.entities.data.SFSObject;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class PublicChatHandler extends OsBaseHandler {
     public static final String COMMAND = "chat.public.send";
@@ -24,7 +26,8 @@ public class PublicChatHandler extends OsBaseHandler {
 
         ChatMessage chatMessage = result.getMessage();
         SFSObject payload = service.buildNewPayload(chatMessage);
-        Collection<User> recipients = room != null ? room.getUserList() : getParentExtension().getParentZone().getUserList();
+        Collection<User> recipientCollection = room != null ? room.getUserList() : getParentExtension().getParentZone().getUserList();
+        List<User> recipients = new ArrayList<>(recipientCollection);
         send(RESPONSE_EVENT, payload, recipients);
 
         if (service.getConfig().isLegacyEventsEnabled()) {
