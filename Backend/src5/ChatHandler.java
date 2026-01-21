@@ -3,7 +3,7 @@ package src5;
 import com.smartfoxserver.v2.entities.User;
 import com.smartfoxserver.v2.entities.data.ISFSObject;
 import com.smartfoxserver.v2.entities.data.SFSObject;
-import java.util.List;
+import java.util.Collection;
 
 public class ChatHandler extends OsBaseHandler {
     
@@ -22,7 +22,7 @@ public class ChatHandler extends OsBaseHandler {
 
         ChatMessage chatMessage = result.getMessage();
         SFSObject payload = service.buildNewPayload(chatMessage);
-        List<User> recipients = room != null ? room.getUserList() : getParentExtension().getParentZone().getUserList();
+        Collection<User> recipients = room != null ? room.getUserList() : getParentExtension().getParentZone().getUserList();
         send("chat.public.message", payload, recipients);
 
         if (service.getConfig().isLegacyEventsEnabled()) {
