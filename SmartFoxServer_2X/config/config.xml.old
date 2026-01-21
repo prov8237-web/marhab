@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<ServerSetup>
+    <!-- إعدادات السيرفر الأساسية -->
+    <ServerName>MyGameServer</ServerName>
+    <MaxUsers>1000</MaxUsers>
+    <MaxRooms>100</MaxRooms>
+    
+    <!-- إعدادات البورتات -->
+    <SocketAddress>127.0.0.1</SocketAddress>
+    <SocketPort>9933</SocketPort>
+    <HttpAddress>127.0.0.1</HttpAddress>
+    <HttpPort>8080</HttpPort>
+    <AdminPort>8000</AdminPort>
+    <WebServicesPort>8888</WebServicesPort>
+    
+    <!-- إعدادات السياسة -->
+    <PolicyServer>
+        <Port>8843</Port>
+        <AllowedAddresses>
+            <Address>*</Address>
+        </AllowedAddresses>
+    </PolicyServer>
+    
+    <!-- المناطق (Zones) -->
+    <Zones>
+        <Zone name="marhab">
+            <Settings>
+                <MaxUsers>500</MaxUsers>
+                <MaxRooms>50</MaxRooms>
+                <MaxRoomNameChars>20</MaxRoomNameChars>
+                <MaxRoomPasswordChars>10</MaxRoomPasswordChars>
+                <MaxUserNameChars>20</MaxUserNameChars>
+                <MaxUserVariables>5</MaxUserVariables>
+            </Settings>
+            
+            <!-- قائمة الغرف -->
+            <Rooms>
+                <Room name="street01" maxUsers="100" maxSpectators="0" isGame="false">
+                    <Extension name="AuthExtension" className="auth.AuthenticationExtension"/>
+                    <Properties>
+                        <isPrivate>false</isPrivate>
+                        <isDynamic>false</isDynamic>
+                    </Properties>
+                </Room>
+                <!-- يمكنك إضافة غرف أخرى هنا -->
+            </Rooms>
+            
+            <!-- الإضافات (Extensions) -->
+            <Extensions>
+                <extension name="AuthExtension" 
+                          type="class" 
+                          className="auth.AuthenticationExtension" 
+                          file="extensions/auth/AuthenticationExtension.jar"/>
+            </Extensions>
+            
+            <!-- إدارة قاعدة البيانات -->
+            <DatabaseManager active="true">
+                <Driver>org.sqlite.JDBC</Driver>
+                <ConnectionString>jdbc:sqlite:database/game_users.db</ConnectionString>
+                <TestSQL>SELECT 1</TestSQL>
+                <MaxActive>10</MaxActive>
+                <MaxIdle>5</MaxIdle>
+            </DatabaseManager>
+        </Zone>
+    </Zones>
+</ServerSetup>

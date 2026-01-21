@@ -1,0 +1,2520 @@
+١٩ يناير ٢٠٢٦ | ١١:٢١:٢٩,٨٧١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١١:٢١:٢٩,٨٨١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١١:٢١:٢٩,٨٨١ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,١١١ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,١٢١ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4602c2a9
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٥١ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٦١ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٧١ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٧١ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٧٦ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٩٢ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٩٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٩٢ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٩٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٤٩٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٥٠١ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٥٠١ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٥٠١ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٥٠١ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@52350abb
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٥٠١ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٥٠١ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١١:٢١:٣٠,٥٠١ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٣,٦٥٤ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٣,٦٥٤ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٣,٦٥٤ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٣,٩١٤ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٣,٩٢٤ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٤٨٤ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٤٩٤ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٥٠٤ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٥٠٤ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٥١٩ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٢٤ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٢٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٣٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٣٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٤٤ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٤٤ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٤٩ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٤٩ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٤٩ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٤٩ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٤٩ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٢:٤٤:١٤,٧٥٤ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٢٥٨ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٢٦٨ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٢٦٨ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٤٩٨ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٥٠٨ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨١٨ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨١٨ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٢٨ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٢٨ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٣٨ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٥٣ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٥٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٥٣ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٥٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٥٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٥٨ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٥٨ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٦٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٦٤ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٦٤ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٦٤ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٣:٠٣:٠٨,٨٦٤ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٠٤١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٠٤٤ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٠٤٤ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٢٦٤ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٢٧٢ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٤٩ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٦٥ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٦٥ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٦٥ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٧٩ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٩٧ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٩٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٩٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٩٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٩٧ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٦٩٧ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٧٠٤ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٧٠٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٧٠٤ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٧٠٤ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٧٠٤ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٣:٠٧:٥٠,٧٠٤ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٨,٩١١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٨,٩١١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٨,٩١١ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,١٣٧ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,١٤٢ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٣٤ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٤٧ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٥٢ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٥٢ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٥٦ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٧١ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٧١ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٧١ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٧١ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٧١ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٧١ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٨١ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٨١ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٨١ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٨١ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٨٦ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٣:١٣:٣٩,٤٨٦ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٠٥٠ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٠٥٦ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٠٥٦ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٣١٥ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٣٢٠ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٣٦ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٤٦ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٥١ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٥١ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٥٨ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٧٦ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٧٦ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٧٦ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٧٦ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٧٦ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٨٠ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٨٠ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٨٦ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٨٦ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٨٦ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٨٦ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٣:٢٥:٢٠,٦٨٦ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٢٩٣ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٢٩٦ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٢٩٧ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٥٣٥ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٥٤٠ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٩٨١ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٩٨٩ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٩٩٤ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤١,٩٩٥ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٠٢ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٢٣ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٢٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٢٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٢٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٢٧ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٢٧ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٣٤ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٣٧ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٣٧ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٣٧ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٣٧ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٣:٣٠:٤٢,٠٣٧ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٣٠٨ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٣٠٨ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٣٠٨ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٥٢٨ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٥٣٨ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4204541c
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٣٨ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٣٨ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٥٠ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٥٠ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٥٨ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٦٨ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٦٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٦٨ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٦٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٦٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٧٨ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٧٨ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٧٨ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٧٨ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@7d61eccf
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٧٨ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٧٨ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٣:٤٣:٣٧,٨٧٨ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٦,٥٢٧ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٦,٥٣١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٦,٥٣٢ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٦,٧٥٧ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٦,٧٦٢ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4204541c
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,٠٦٦ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,٠٧٥ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,٠٧٩ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,٠٨٠ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,٠٨٧ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١٠٢ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١٠٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١٠٣ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١٠٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١٠٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١٠٩ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١١٢ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١١٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١١٥ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@7d61eccf
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١١٥ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١١٥ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٣:٥٠:٥٧,١١٥ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٣٧٨ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٣٧٨ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٣٧٨ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٥٩٧ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٥٩٧ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4204541c
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٨٩٥ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩١٠ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩١٠ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩١٠ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩١٠ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٣٤ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٣٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٣٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٣٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٣٤ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٣٤ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٤٢ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٤٢ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٤٢ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@7d61eccf
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٤٢ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٤٢ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٤:٠٥:١٣,٩٤٢ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٣٢٥ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٣٢٧ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٣٢٨ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٥٦٢ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٥٩٢ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4204541c
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩١٥ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٢٣ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٢٨ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٢٨ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٣٥ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٣٨ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٣٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٣٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٣٨ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٥٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٥٧ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٦٠ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٦٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٦٤ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@7d61eccf
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٦٥ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٦٥ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٤:٠٨:٣٩,٩٦٥ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,١١٤ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,١١٤ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,١١٤ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٣٤٩ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٣٤٩ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4204541c
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٤٦ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٦٢ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٦٢ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٦٢ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٧٧ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@7d61eccf
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٤:٣٠:٤١,٦٩٣ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢١,٤٢٦ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢١,٤٢٩ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢١,٤٣٠ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢١,٦٩٥ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢١,٦٩٥ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4602c2a9
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٢٣ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٣٩ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٣٩ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٣٩ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٤٥ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٥٥ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٥٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٥٥ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٥٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٥٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٧٠ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٧٠ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٧٠ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٧٠ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@52350abb
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٧٠ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٧٠ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٤:٤١:٢٢,٠٨٠ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣١,٨١٨ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣١,٨١٨ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣١,٨١٨ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٠٦٨ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٠٦٨ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4602c2a9
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٣٦٥ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٣٨١ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٣٨١ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٣٨١ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٣٩٧ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٧٥ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٧٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٧٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٧٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٧٥ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٧٥ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٩١ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٩١ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@52350abb
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٩١ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٩١ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٩١ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٤:٤٥:٣٢,٤٩١ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٤,٩١٩ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٤,٩٢١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٤,٩٢١ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,١٤٦ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,١٥١ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4602c2a9
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٤٩ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٥٧ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٦١ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٦١ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٦٧ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٨١ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٨٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٨٢ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٨٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٨٣ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٨٦ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٩٢ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٩٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٩٥ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@52350abb
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٩٥ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٩٥ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٤:٥٦:٣٥,٤٩٥ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٣,٨٤١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٣,٨٤١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٣,٨٤١ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٤,٠٦١ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٤,٠٧٧ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4602c2a9
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١١٤ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١١٤ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٢٩ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٢٩ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٢٩ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٤٥ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٤٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٤٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٤٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٤٥ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٤٥ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٦١ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٦١ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@52350abb
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٦١ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٦١ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٦١ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٥:١١:٤٥,١٦١ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٤٠٤ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٤٠٥ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٤٠٦ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٦٣١ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٦٣٦ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@4602c2a9
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٣٩ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٤٨ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٥٢ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٥٢ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٥٨ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٧٣ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٧٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٧٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٧٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٧٤ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٨٠ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٨٣ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٨٥ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٨٦ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@52350abb
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٨٦ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٨٦ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٥:١٧:٥٩,٩٨٦ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,١٥٢ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,١٥٢ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,١٥٢ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٣٧٢ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٣٧٢ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@3e2822
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٦٨٦ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٦٨٨ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٦٨٨ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٦٨٨ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧٠٧ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧١٨ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧١٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧١٨ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧١٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧١٨ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧١٨ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧١٨ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧٣٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧٣٤ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@1a6f2363
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧٣٤ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧٣٤ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ١٥:٤٦:٤٣,٧٣٤ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٣,٩٨٦ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٣,٩٨٦ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٣,٩٨٦ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٢٠٥ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٢٠٥ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@3e2822
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٥٥٠ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٥٦٥ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٥٨١ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٥٨١ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٥٨١ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٥٩٦ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@1a6f2363
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦١٢ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢١:٠٨:١٤,٦٢٨ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,١٧٩ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,١٩٤ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,١٩٤ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٤١٤ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٤١٤ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@3e2822
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧١١ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧١١ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧١١ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧١١ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٢٦ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٤٢ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@1a6f2363
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٥٨ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٥٨ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢١:١٩:٤٤,٧٥٨ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٢,٦٥٤ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٢,٦٥٤ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٢,٦٧٠ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٢,٨٨٩ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٢,٨٨٩ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@3e2822
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,١٨٦ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,١٨٦ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,١٨٦ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,١٨٦ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢٠٢ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@1a6f2363
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢١٧ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢١:٢٥:٢٣,٢٣٠ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣١,٩٦٥ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣١,٩٦٧ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣١,٩٦٨ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٢٠٠ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٢٠٥ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@3e2822
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٤٤ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٥٦ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٦١ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٦١ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٧١ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٩٤ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٩٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٩٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٩٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٥٩٤ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٦٠٣ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٦٠٣ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٦١٢ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٦١٢ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@1a6f2363
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٦١٢ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٦١٢ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢١:٣٢:٣٢,٦١٢ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٦,٨٣٩ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٦,٨٥٥ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٦,٨٥٥ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٠٩٠ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٠٩٠ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@29a60c27
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٣٨٨ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٣٨٨ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٠٣ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٠٣ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٠٣ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤١٩ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤١٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤١٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤١٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤١٩ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤١٩ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤١٩ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٣٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٣٤ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@5ebd56e9
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٣٤ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٣٤ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢١:٤٩:١٧,٤٣٤ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,١٦٩ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,١٦٩ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,١٦٩ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٣٩٩ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٤١٤ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@29a60c27
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧١٢ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٢٨ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٢٨ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٢٨ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٤٣ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@5ebd56e9
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢٢:١٤:٢٩,٧٥٩ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٤٠١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٤٠١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٤٠١ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٦٥٩ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٦٥٩ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@29a60c27
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٩٧٢ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٩٨٧ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٩٨٧ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٩٨٧ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٣,٩٨٧ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠١٩ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠١٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠١٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠١٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠١٩ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠١٩ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠١٩ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠٣٤ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠٣٤ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@5ebd56e9
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠٣٤ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠٣٤ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢٢:١٦:٥٤,٠٣٤ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥١,٥٦١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥١,٥٧٧ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥١,٥٧٧ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥١,٧٩٦ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥١,٧٩٦ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,٠٩٣ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٠٩ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٠٩ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٠٩ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٠٩ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٢٥ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٢٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٢٥ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٢٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٢٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٤٠ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٤٠ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٤٠ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٤٠ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٤٠ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٤٠ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢٣:١٧:٥٢,١٤٧ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٢٦١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٢٦١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٢٦١ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٥١٤ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٥١٤ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٥٩ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٦٣ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٦٣ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٦٣ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٨٢ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٩٨ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٩٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٩٩ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٨٩٩ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٠ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٤ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٥ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٥ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٥ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٥ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٥ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢٣:٢٧:١٠,٩٠٥ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٢٦١ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٢٦١ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٢٦١ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٥٢٣ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٥٣٨ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٨٦٧ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٨٦٧ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٨٨٢ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٨٨٢ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٨٨٢ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٤ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٤ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٤ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٨ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٨ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٨ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٨ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٨ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩١٨ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢٣:٣٥:٠٨,٩٢٩ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢٣:٣٩:٥٩,٦١٨ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢٣:٣٩:٥٩,٦١٨ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢٣:٣٩:٥٩,٦١٨ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢٣:٣٩:٥٩,٨٥٣ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢٣:٣٩:٥٩,٨٥٣ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٣٧٤ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٣٧٤ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٣٨٩ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٣٨٩ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٣٨٩ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٠٥ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٠٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٠٥ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٠٥ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٠ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٠ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٠ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٠ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٠ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٠ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٠ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢٣:٤٠:٠٠,٤٢٩ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٢٩,٩٠٢ | INFO  | main | bootLogger |     | SmartFoxServer 2X
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٢٩,٩٠٢ | INFO  | main | bootLogger |     | BitSwarmEngine version: 3.72.0 { main }
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٢٩,٩٠٢ | INFO  | main | bootLogger |     | System Info:
+	Processor(s): 4
+	VM Max. memory: 4288MB
+	os.name: Windows 10
+	os.arch: amd64
+	os.version: 10.0
+	java.version: 11.0.13
+	java.vendor: Eclipse Adoptium
+	java.vendor.url: https://adoptium.net/
+	java.vm.specification.version: 11
+	java.vm.version: 11.0.13+8
+	java.vm.vendor: Eclipse Adoptium
+	java.vm.name: OpenJDK 64-Bit Server VM
+	java.io.tmpdir: C:\Users\mmo5h\AppData\Local\Temp\
+	Default charset: UTF-8
+
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,١٢١ | INFO  | main | bootLogger |     | Network Info:
+	Card: Software Loopback Interface 1
+		 ->127.0.0.1
+		 ->0:0:0:0:0:0:0:1
+	Card: WAN Miniport (IPv6)
+	Card: Microsoft 6to4 Adapter
+	Card: WAN Miniport (IKEv2)
+	Card: Microsoft IP-HTTPS Platform Adapter
+	Card: WAN Miniport (IP)
+	Card: WAN Miniport (PPPOE)
+	Card: WAN Miniport (L2TP)
+	Card: Remote NDIS based Internet Sharing Device
+	Card: Famatech Radmin VPN Ethernet Adapter
+		 ->26.140.24.71
+		 ->fdfd:0:0:0:0:0:1a8c:1847
+		 ->fe80:0:0:0:2f39:e3bf:6029:762%eth3
+	Card: Microsoft Teredo Tunneling Adapter
+	Card: WAN Miniport (SSTP)
+	Card: WAN Miniport (PPTP)
+	Card: WAN Miniport (Network Monitor)
+	Card: TAP-Windows Adapter V9
+		 ->fe80:0:0:0:4a6b:16e:3e8f:5904%eth5
+	Card: Microsoft Kernel Debug Network Adapter
+	Card: Realtek PCIe GbE Family Controller
+		 ->192.168.1.245
+		 ->fe80:0:0:0:1949:233d:9b75:6e48%eth7
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+	Card: Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+	Card: TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+	Card: TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+	Card: TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+	Card: Realtek PCIe GbE Family Controller-Npcap Packet Driver (NPCAP)-0000
+	Card: Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+	Card: Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IP)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+	Card: WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+	Card: WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+	Card: WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,١٣٧ | INFO  | main | bootLogger |     | Session manager ready: com.smartfoxserver.bitswarm.sessions.DefaultSessionManager@6a62689d
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٥٠ | INFO  | main | bootLogger |     | TCP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٦٥ | INFO  | main | bootLogger |     | UDP Selector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٦٥ | INFO  | main | bootLogger |     | AcceptSelector opened
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٦٥ | INFO  | main | bootLogger |     | DatagramChannel cache size: 80
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٦٥ | INFO  | main | bootLogger |     | Added bound tcp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | main | bootLogger |     | Added bound udp socket --> 0.0.0.0:9933
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SystemReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | Scheduler1-thread-1 | bootLogger |     | Scheduler started: scheduler
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.ExtensionReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | main | bootLogger |     | Controller started: com.smartfoxserver.v2.controllers.v290.SmasherReqController 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | main | bootLogger |     | SocketWriter v3 started (TCP pool size: 3, UDP pool size: 3 
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | main | bootLogger |     | Security Manager started
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٤٩٧ | INFO  | main | bootLogger |     | DatagramReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٥١٢ | INFO  | main | bootLogger |     | IOHandler: com.smartfoxserver.v2.protocol.SFSIoHandler@cc6460c
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٥١٢ | INFO  | main | bootLogger |     | SocketReader started
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٥١٢ | INFO  | main | bootLogger |     | SocketAcceptor initialized
+١٩ يناير ٢٠٢٦ | ٢٣:٤٣:٣٠,٥١٢ | INFO  | main | bootLogger |     | [[[ ===--- Boot sequence complete ---=== ]]]

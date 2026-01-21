@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerSetup>
+    <!-- Server Information -->
+    <ServerName>Marhab Game Server</ServerName>
+    <ServerVersion>2.0</ServerVersion>
+    <MaxUsers>500</MaxUsers>
+    
+    <!-- Connection Settings -->
+    <SocketAddress>127.0.0.1</SocketAddress>
+    <SocketPort>9933</SocketPort>
+    
+    <HttpAddress>127.0.0.1</HttpAddress>
+    <HttpPort>8080</HttpPort>
+    
+    <AdminAddress>127.0.0.1</AdminAddress>
+    <AdminPort>8000</AdminPort>
+    
+    <!-- Database Driver Path -->
+    <javaPath>lib/sqlite-jdbc.jar</javaPath>
+    
+    <!-- Additional Java Libraries -->
+    <additionalJars>
+        <jar>lib/sqlite-jdbc.jar</jar>
+    </additionalJars>
+    
+    <!-- Zones Configuration -->
+    <Zones>
+        <Zone name="marhab">
+            <Settings>
+                <MaxUsers>200</MaxUsers>
+                <MaxUserNameChars>20</MaxUserNameChars>
+                <MinUserNameChars>3</MinUserNameChars>
+                <MaxRoomNameChars>25</MaxRoomNameChars>
+                <MinRoomNameChars>3</MinRoomNameChars>
+                <GuestLoginAllowed>true</GuestLoginAllowed>
+                <MaxChatMessageLength>200</MaxChatMessageLength>
+                <MaxPrivateChatMessageLength>500</MaxPrivateChatMessageLength>
+                <ModeratorChatMute>false</ModeratorChatMute>
+                <ChatFilterEnabled>false</ChatFilterEnabled>
+                <FloodFilterEnabled>false</FloodFilterEnabled>
+                <AutoRemoveEmptyPrivateRooms>true</AutoRemoveEmptyPrivateRooms>
+                <PrivateChatEnabled>true</PrivateChatEnabled>
+                <RoomListUpdatesEnabled>true</RoomListUpdatesEnabled>
+            </Settings>
+            
+            <!-- Database Connection -->
+            <DatabaseManager>
+                <driverName>org.sqlite.JDBC</driverName>
+                <connectionString>jdbc:sqlite:C:/Users/mmo5h/SmartFoxServer_2X/SFS2X/database/game_users.db</connectionString>
+                <userName></userName>
+                <password></password>
+                <testSql>SELECT 1</testSql>
+                <maxActive>10</maxActive>
+                <maxIdle>5</maxIdle>
+                <maxWait>5000</maxWait>
+            </DatabaseManager>
+            
+            <!-- Rooms -->
+            <Rooms>
+                <!-- Main Street Room -->
+                <Room name="street01" 
+                      maxUsers="100" 
+                      isGame="false" 
+                      isPublic="true"
+                      autoJoin="true"
+                      isDynamic="false">
+                    <Extension name="src5" 
+                              className="src5.MainExtension"
+                              type="JAVA"/>
+                    <Variables>
+                        <Variable name="roomKey" type="STRING" value="street01" isPrivate="false"/>
+                        <Variable name="roomTitle" type="STRING" value="الشارع الرئيسي" isPrivate="false"/>
+                        <Variable name="type" type="STRING" value="OUTDOOR" isPrivate="false"/>
+                        <Variable name="width" type="INT" value="850" isPrivate="false"/>
+                        <Variable name="height" type="INT" value="500" isPrivate="false"/>
+                    </Variables>
+                </Room>
+                
+                <!-- Additional Rooms -->
+                <Room name="lobby01" 
+                      maxUsers="50" 
+                      isGame="false" 
+                      isPublic="true"
+                      autoJoin="false">
+                    <Extension name="src5" 
+                              className="src5.MainExtension"
+                              type="JAVA"/>
+                </Room>
+                
+                <Room name="home01" 
+                      maxUsers="10" 
+                      isGame="false" 
+                      isPublic="false"
+                      autoJoin="false">
+                    <Extension name="src5" 
+                              className="src5.MainExtension"
+                              type="JAVA"/>
+                </Room>
+            </Rooms>
+            
+            <!-- Extensions -->
+            <Extensions>
+                <!-- Main Extension -->
+                <extension name="src5" 
+                          type="JAVA" 
+                          className="src5.MainExtension" 
+                          file="extensions/src5.jar"/>
+                
+                <!-- Authentication Extension (Legacy) -->
+                <extension name="AuthExtension" 
+                          type="JAVA" 
+                          className="src5.MarhabExtension" 
+                          file="extensions/marhab/MarhabExtension.jar"/>
+            </Extensions>
+            
+            <!-- User Manager -->
+            <UserManager>
+                <allowGuestUsers>true</allowGuestUsers>
+                <maxGuestsPerIp>3</maxGuestsPerIp>
+                <maxUsersPerIp>10</maxUsersPerIp>
+                <minUserNameLength>3</minUserNameLength>
+                <maxUserNameLength>20</maxUserNameLength>
+                <userNamePattern>^[a-zA-Z0-9_]+$</userNamePattern>
+            </UserManager>
+            
+            <!-- Room Manager -->
+            <RoomManager>
+                <maxRoomsPerUser>5</maxRoomsPerUser>
+                <maxUsersPerRoom>100</maxUsersPerRoom>
+                <roomAutoRemove>true</roomAutoRemove>
+                <roomAutoRemoveDelay>300</roomAutoRemoveDelay>
+            </RoomManager>
+            
+            <!-- Buddy List -->
+            <BuddyList>
+                <maxBuddies>100</maxBuddies>
+                <offlineBuddies>true</offlineBuddies>
+                <blockBuddies>true</blockBuddies>
+                <buddyStates>true</buddyStates>
+                <buddyMessages>true</buddyMessages>
+            </BuddyList>
+        </Zone>
+    </Zones>
+    
+    <!-- Server Settings -->
+    <ServerSettings>
+        <Debug>true</Debug>
+        <LogLevel>INFO</LogLevel>
+        <PerformanceMonitoring>true</PerformanceMonitoring>
+        <ThreadPoolSize>10</ThreadPoolSize>
+        <SessionTimeout>1800</SessionTimeout>
+        <LoginTimeout>30</LoginTimeout>
+        <PingInterval>30</PingInterval>
+        <MaxMessageSize>2048</MaxMessageSize>
+        <Compression>true</Compression>
+        <Encryption>false</Encryption>
+        <WebSocketEnabled>true</WebSocketEnabled>
+    </ServerSettings>
+    
+    <!-- Monitoring -->
+    <Monitoring>
+        <AdminToolEnabled>true</AdminToolEnabled>
+        <AdminToolPort>9000</AdminToolPort>
+        <AdminToolPassword>admin123</AdminToolPassword>
+        <StatsUpdateInterval>60</StatsUpdateInterval>
+        <LogFile>logs/sfs2x.log</LogFile>
+        <LogBackup>true</LogBackup>
+        <LogMaxSize>10</LogMaxSize>
+    </Monitoring>
+</ServerSetup>

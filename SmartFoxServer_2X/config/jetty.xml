@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+    
+    <!-- ⚡ HTTP Connector على Port 8080 -->
+    <Call name="addConnector">
+        <Arg>
+            <New class="org.eclipse.jetty.server.ServerConnector">
+                <Arg name="server"><Ref refid="Server" /></Arg>
+                <Set name="port">8080</Set>
+                <Set name="idleTimeout">300000</Set>
+            </New>
+        </Arg>
+    </Call>
+
+    <!-- 📁 Handler لتقديم الملفات الثابتة -->
+    <Set name="handler">
+        <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+            <Set name="handlers">
+                <Array type="org.eclipse.jetty.server.Handler">
+                    
+                    <!-- ⭐ Resource Handler - لتقديم ملفات www -->
+                    <Item>
+                        <New class="org.eclipse.jetty.server.handler.ResourceHandler">
+                            <Set name="directoriesListed">true</Set>
+                            <Set name="welcomeFiles">
+                                <Array type="String">
+                                    <Item>index.html</Item>
+                                </Array>
+                            </Set>
+                            <Set name="resourceBase">./www</Set>
+                        </New>
+                    </Item>
+                    
+                    <!-- Admin Panel Handler -->
+                    <Item>
+                        <New class="org.eclipse.jetty.servlet.ServletContextHandler">
+                            <Set name="contextPath">/admin</Set>
+                        </New>
+                    </Item>
+                    
+                    <!-- WebSocket Handler -->
+                    <Item>
+                        <New class="org.eclipse.jetty.servlet.ServletContextHandler">
+                            <Set name="contextPath">/websocket</Set>
+                        </New>
+                    </Item>
+                    
+                </Array>
+            </Set>
+        </New>
+    </Set>
+
+</Configure>
