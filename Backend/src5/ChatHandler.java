@@ -30,7 +30,11 @@ public class ChatHandler extends OsBaseHandler {
 
         if (service.getConfig().isLegacyEventsEnabled()) {
             SFSObject legacyPayload = service.buildLegacyPublicPayload(sender, chatMessage);
-            send("publicMessage", legacyPayload, recipients);
+            if (room != null) {
+                getApi().sendPublicMessage(chatMessage.getMessage(), sender, room, legacyPayload);
+            } else {
+                send("publicMessage", legacyPayload, sender);
+            }
         }
 
         trace("[CHAT_COMPAT] result=OK userId=" + chatMessage.getSenderId()
