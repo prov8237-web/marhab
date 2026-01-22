@@ -1047,6 +1047,7 @@ package com.oyunstudyosu.service
             "stack":new Error().getStackTrace() || "NO_STACK"
          };
          logHistory.push(entry);
+         logHistory.push(buildNetEntry("net_out",cmd,data,room));
          if(isChatCommand(cmd))
          {
             logChatCommand("CLIENT_SEND",cmd,dataStr,room);
@@ -1141,6 +1142,7 @@ package com.oyunstudyosu.service
             "latencyMs":latencyMs
          };
          logHistory.push(entry);
+         logHistory.push(buildNetEntry("net_in",cmd,respObj,null,(respObj && respObj.errorCode ? respObj.errorCode : null)));
          if(isChatCommand(cmd))
          {
             logChatCommand("SERVER_RECV",cmd,responseStr,null);
@@ -1402,6 +1404,51 @@ package com.oyunstudyosu.service
          {
             trace("⚠️ Chat command log error: " + e.message);
          }
+      }
+
+      private function buildNetEntry(direction:String, cmd:String, payload:Object, room:Room, errorCode:String = null) : Object
+      {
+         var meta:Object = buildPayloadMeta(payload);
+         return {
+            "type":direction,
+            "cmd":cmd,
+            "room":room != null ? room.name : null,
+            "payload":payload,
+            "payloadKeys":meta.keys,
+            "payloadTypes":meta.types,
+            "errorCode":errorCode
+         };
+      }
+
+      private function buildPayloadMeta(payload:Object) : Object
+      {
+         var keys:Array = [];
+         var types:Object = {};
+         if(payload != null)
+         {
+            for(var key:String in payload)
+            {
+               keys.push(key);
+               types[key] = getValueType(payload[key]);
+            }
+         }
+         return {
+            "keys":keys,
+            "types":types
+         };
+      }
+
+      private function getValueType(value:*) : String
+      {
+         if(value == null)
+         {
+            return "null";
+         }
+         if(value is Array)
+         {
+            return "Array";
+         }
+         return typeof value;
       }
       
       private function dumpSFSObject(obj:ISFSObject) : String
@@ -1713,6 +1760,9 @@ package com.oyunstudyosu.service
          var j:int;
          var changed:Array = event.params.changedVars as Array;
          var u:User = event.params.user as User;
+         var userVar:SFSUserVariable;
+         var varValue:*;
+         var varType:String;
          var i:int = 0;
          while(i < changed.length)
          {
@@ -1720,8 +1770,12 @@ package com.oyunstudyosu.service
             listeners = userVarList[key];
             try
             {
+               userVar = u != null ? u.getVariable(key) as SFSUserVariable : null;
+               varValue = userVar != null ? userVar.getValue() : null;
+               varType = userVar != null ? userVar.type : "null";
                Cc.log("👤 [USER VAR UPDATE] " + key + " for " + u.name);
-               writeToLiveFile("[USER VAR] " + key + " for " + u.name);
+               Cc.log("🧩 [USER VAR DATA] {\"name\":\"" + key + "\",\"value\":" + safeStringify(varValue) + ",\"type\":\"" + varType + "\",\"user\":\"" + u.name + "\"}");
+               writeToLiveFile("[USER VAR] " + key + " for " + u.name + " value=" + safeStringify(varValue) + " type=" + varType);
             }
             catch(e:Error)
             {
