@@ -86,7 +86,12 @@ package com.oyunstudyosu.drop
                         break;
                      }
                   }
-                  serviceModel.requestData("drop",{"type":"COLLECT"},onDropResponse);
+                  serviceModel.requestData("drop",{
+                     "type":"COLLECT",
+                     "x":groundVos[_loc6_].posX,
+                     "y":groundVos[_loc6_].posY,
+                     "clip":groundVos[_loc6_].clip
+                  },onDropResponse);
                   break;
                }
             }

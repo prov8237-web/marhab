@@ -47,6 +47,7 @@ public class MainExtension extends SFSExtension {
         registerHandler("barterrequest", BarterRequestHandler.class);
         registerHandler("barterresponse", BarterResponseHandler.class);
         registerHandler("bartercancel", BarterCancelHandler.class);
+        registerHandler("drop", DropHandler.class);
         registerHandler("chatballoon", ChatBalloonHandler.class);
         registerHandler("chatext", ChatExtensions.class);
         registerHandler("cachemgr", CacheManager.class);
