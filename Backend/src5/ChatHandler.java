@@ -23,18 +23,21 @@ public class ChatHandler extends OsBaseHandler {
         }
 
         ChatMessage chatMessage = result.getMessage();
+        if (room == null) {
+            sendError(sender, result.getRoomId(), "ROOM_NOT_FOUND", "Room is required for public chat");
+            return;
+        }
+
         SFSObject payload = service.buildNewPayload(chatMessage);
         Collection<User> recipientCollection = room != null ? room.getUserList() : getParentExtension().getParentZone().getUserList();
         List<User> recipients = new ArrayList<>(recipientCollection);
         send("chat.public.message", payload, recipients);
 
+        SFSObject legacyPayload = service.buildLegacyPublicPayload(sender, chatMessage);
+        getApi().sendPublicMessage(chatMessage.getMessage(), sender, room, legacyPayload);
+
         if (service.getConfig().isLegacyEventsEnabled()) {
-            SFSObject legacyPayload = service.buildLegacyPublicPayload(sender, chatMessage);
-            if (room != null) {
-                getApi().sendPublicMessage(chatMessage.getMessage(), sender, room, legacyPayload);
-            } else {
-                send("publicMessage", legacyPayload, sender);
-            }
+            send("publicMessage", legacyPayload, recipients);
         }
 
         trace("[CHAT_COMPAT] result=OK userId=" + chatMessage.getSenderId()

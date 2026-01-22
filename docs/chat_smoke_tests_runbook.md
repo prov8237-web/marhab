@@ -5,14 +5,16 @@
 2. تأكد من تحميل Extension `src5.MainExtension`.
 3. شغّل العميل (SWF/EXE) واتصل بالسيرفر المحلي.
 
-## 2) سيناريو Public Chat (نشر مزدوج)
+## 2) سيناريو Public Chat (System + Dual-Publish عند التفعيل)
 **الخطوات:**
 - أدخل غرفة عامة.
 - أرسل رسالة عبر الشات العام.
+- راقب سجل الـDebug أو أي Logger للعميل الذي يعرض أحداث SmartFox.
 
-**المتوقع (Dual-Publish):**
-- الحدث الجديد: `chat.public.message`
-- الحدث القديم: `publicMessage`
+**المتوقع:**
+- **System Event:** استقبال `SFSEvent type="publicMessage"` (هذا ما يعتمد عليه الـCAHPNL.9.swf).
+- **الحدث الجديد:** `chat.public.message` (Extension event).
+- **الحدث القديم (فقط إذا كانت `legacyEventsEnabled=true`):** `publicMessage` كـExtension event.
 - تظهر الرسالة في واجهة العميل.
 
 ## 3) سيناريو Whisper (نشر مزدوج)
