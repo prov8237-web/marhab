@@ -1323,7 +1323,7 @@ package com.oyunstudyosu.service
 
       private function isChatCommand(cmd:String) : Boolean
       {
-         return cmd == "chat" || cmd == "whisper" || cmd == "chat.public.send" || cmd == "chat.public.message" || cmd == "chat.whisper.send" || cmd == "chat.whisper.message" || cmd == "whispernotify" || cmd == "publicMessageLimitExceeded";
+         return cmd == "chat" || cmd == "whisper" || cmd == "chat.public.send" || cmd == "chat.public.message" || cmd == "chat.whisper.send" || cmd == "chat.whisper.message" || cmd == "whispernotify" || cmd == "publicMessageLimitExceeded" || cmd == "chat.message" || cmd == "chat.sync" || cmd == "globalchat.join" || cmd == "globalchat.leave";
       }
 
       private function logChatTrace(dir:String, kind:String, payload:Object, dataStr:String, currentSeq:int, ts:String) : void
@@ -1334,6 +1334,7 @@ package com.oyunstudyosu.service
          {
             detail = detail + "\n" + buildChatEventDetails(payload);
          }
+         detail = detail + "\n" + buildFlowLine(dir,kind);
          logHistory.push({
             "type":"CHAT_TRACE",
             "dir":dir,
@@ -1404,6 +1405,15 @@ package com.oyunstudyosu.service
          {
             trace("⚠️ Chat command log error: " + e.message);
          }
+      }
+
+      private function buildFlowLine(dir:String, kind:String) : String
+      {
+         if(dir == "OUT")
+         {
+            return "🔁 FLOW: CLIENT → SERVER (" + kind + ")";
+         }
+         return "🔁 FLOW: SERVER → CLIENT (" + kind + ")";
       }
 
       private function buildNetEntry(direction:String, cmd:String, payload:Object, room:Room, errorCode:String = null) : Object
