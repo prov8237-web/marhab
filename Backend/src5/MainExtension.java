@@ -1,5 +1,6 @@
 package src5;
 
+import com.smartfoxserver.v2.core.SFSEventType;
 import com.smartfoxserver.v2.extensions.SFSExtension;
 import com.smartfoxserver.v2.entities.User;
 import com.smartfoxserver.v2.entities.data.ISFSObject;
@@ -171,6 +172,8 @@ registerHandler("restoredata", BackupHandler.class);
         
         // عرض جميع الـ commands المسجلة مصنفة
         printRegisteredCommandsByCategory();
+
+        addEventHandler(SFSEventType.PUBLIC_MESSAGE, PublicChatHandler.class);
         
         // تسجيل بدء التشغيل
         logSystemEvent("SERVER_START", "Extension initialized successfully");

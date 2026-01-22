@@ -1,15 +1,20 @@
 package src5;
 
+import com.smartfoxserver.v2.core.ISFSEvent;
+import com.smartfoxserver.v2.core.SFSEventParam;
 import com.smartfoxserver.v2.entities.Room;
 import com.smartfoxserver.v2.entities.User;
+import com.smartfoxserver.v2.entities.data.ISFSObject;
 import com.smartfoxserver.v2.entities.data.SFSObject;
+import com.smartfoxserver.v2.extensions.IServerEventHandler;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class PublicChatHandler extends OsBaseHandler {
+public class PublicChatHandler extends OsBaseHandler implements IServerEventHandler {
     public static final String COMMAND = "chat.public.send";
     public static final String RESPONSE_EVENT = "chat.public.message";
+    public static final String LEGACY_COMMAND = "chat";
 
     @Override
     public void handleClientRequest(User user, com.smartfoxserver.v2.entities.data.ISFSObject params) {
@@ -43,6 +48,30 @@ public class PublicChatHandler extends OsBaseHandler {
         }
 
         traceLog(chatMessage, "OK");
+    }
+
+    @Override
+    public void handleServerEvent(ISFSEvent event) {
+        User sender = (User) event.getParameter(SFSEventParam.USER);
+        Room room = (Room) event.getParameter(SFSEventParam.ROOM);
+        String message = (String) event.getParameter(SFSEventParam.MESSAGE);
+        ISFSObject data = (ISFSObject) event.getParameter(SFSEventParam.DATA);
+        if (sender == null || room == null || message == null) {
+            trace("[CHAT_BRIDGE] Missing event parameters for legacy bridge.");
+            return;
+        }
+
+        SFSObject legacyPayload = new SFSObject();
+        legacyPayload.putUtfString("sender", sender.getName());
+        legacyPayload.putUtfString("message", message);
+        legacyPayload.putUtfString("roomId", room.getName());
+        if (data != null) {
+            legacyPayload.putSFSObject("data", data);
+        }
+
+        Collection<User> recipients = room.getUserList();
+        send(LEGACY_COMMAND, legacyPayload, new ArrayList<>(recipients));
+        trace("[CHAT_BRIDGE] command=" + LEGACY_COMMAND + " sender=" + sender.getName() + " roomId=" + room.getName());
     }
 
     private void sendError(User user, String roomId, String code, String message) {
