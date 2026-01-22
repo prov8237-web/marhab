@@ -36,7 +36,7 @@ public class PublicChatHandler extends OsBaseHandler {
         send(RESPONSE_EVENT, payload, recipients);
 
         SFSObject legacyPayload = service.buildLegacyPublicPayload(user, chatMessage);
-        getApi().sendPublicMessage(chatMessage.getMessage(), user, room, legacyPayload);
+        getApi().sendPublicMessage(room, user, chatMessage.getMessage(), legacyPayload);
 
         if (service.getConfig().isLegacyEventsEnabled()) {
             send("publicMessage", legacyPayload, recipients);
