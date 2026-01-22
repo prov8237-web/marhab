@@ -61,6 +61,18 @@ public class PublicChatHandler extends OsBaseHandler implements IServerEventHand
             return;
         }
 
+        trace("[CHAT_BRIDGE] publicMessage senderName=" + sender.getName()
+            + " senderId=" + sender.getId()
+            + " roomName=" + room.getName()
+            + " roomId=" + room.getId()
+            + " message=\"" + message + "\""
+            + " vars={avatarName=" + getUserVar(sender, "avatarName")
+            + ", chatBalloon=" + getUserVar(sender, "chatBalloon")
+            + ", mood=" + getUserVar(sender, "mood")
+            + ", statusMessage=" + getUserVar(sender, "statusMessage")
+            + "}"
+            + " params=" + (data != null ? data.toJson() : "{}"));
+
         SFSObject legacyPayload = new SFSObject();
         legacyPayload.putUtfString("sender", sender.getName());
         legacyPayload.putUtfString("message", message);
@@ -87,6 +99,16 @@ public class PublicChatHandler extends OsBaseHandler implements IServerEventHand
             return user.getVariable("chatBalloon").getIntValue();
         }
         return 1;
+    }
+
+    private String getUserVar(User user, String name) {
+        if (user == null || !user.containsVariable(name) || user.getVariable(name) == null) {
+            return "null";
+        }
+        if (user.getVariable(name).isNull()) {
+            return "null";
+        }
+        return String.valueOf(user.getVariable(name).getValue());
     }
 
     private long extractTimestamp(ISFSObject data) {
