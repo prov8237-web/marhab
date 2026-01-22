@@ -54,6 +54,7 @@ package com.oyunstudyosu.chat
          Sanalika.instance.serviceModel.sfs.addEventListener("publicMessage",onPublicMessage);
          Sanalika.instance.serviceModel.listenExtension("whisper",whisperToUser);
          Sanalika.instance.serviceModel.listenExtension("whispernotify",whisperToAll);
+         Sanalika.instance.serviceModel.listenExtension("speech.message",onSpeechMessage);
          Dispatcher.addEventListener("RESIZE",onSceneResize);
          completeView = new AvatarNickCompleteView();
          Sanalika.instance.layerModel.hudLayer.addChild(completeView);
@@ -155,6 +156,49 @@ package com.oyunstudyosu.chat
          var _loc3_:User = param1.params.sender;
          var _loc2_:String = String(param1.params.message);
          processMessage(_loc3_,_loc2_);
+      }
+
+      private function onSpeechMessage(param1:Object) : void
+      {
+         var bubbleId:int;
+         var scale:Number;
+         var showName:Boolean;
+         if(param1 == null || param1.errorCode != null)
+         {
+            return;
+         }
+         var senderId:String = String(param1.senderId);
+         var message:String = String(param1.message);
+         if(message == null)
+         {
+            return;
+         }
+         message = message.substring(0,100);
+         if(message.length == 0)
+         {
+            return;
+         }
+         if(Sanalika.instance.engine.scene == null || !Sanalika.instance.engine.scene.existsComponent(SceneCharacterComponent))
+         {
+            return;
+         }
+         if(Sanalika.instance.avatarModel.isBlocked(senderId))
+         {
+            return;
+         }
+         bubbleId = param1.bubbleId != null ? int(param1.bubbleId) : 1;
+         scale = param1.scale != null ? Number(param1.scale) : 1;
+         showName = param1.showName != null ? Boolean(param1.showName) : true;
+         var sceneComp:SceneCharacterComponent = Sanalika.instance.engine.scene.getComponent(SceneCharacterComponent) as SceneCharacterComponent;
+         var character:ICharacter = sceneComp.getAvatarById(senderId);
+         if(character == null)
+         {
+            return;
+         }
+         if(Sanalika.instance.avatarModel.settings.incomingMessages && Sanalika.instance.avatarModel.pero)
+         {
+            character.talk(message,bubbleId,scale,showName);
+         }
       }
       
       public function processMessage(param1:User, param2:String) : void

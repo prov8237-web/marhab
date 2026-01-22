@@ -7,8 +7,10 @@ import com.smartfoxserver.v2.entities.data.SFSObject;
 
 public class SpeechBroadcastHandler extends OsBaseHandler {
     public static final String COMMAND = "speech.broadcast";
+    private static final String EVENT = "speech.message";
     private static final int MAX_MESSAGE_LENGTH = 100;
     private static final int MIN_MESSAGE_LENGTH = 2;
+    private static final double DEFAULT_SCALE = 1.0;
 
     @Override
     public void handleClientRequest(User sender, ISFSObject params) {
@@ -39,9 +41,24 @@ public class SpeechBroadcastHandler extends OsBaseHandler {
             return;
         }
 
-        SFSObject data = new SFSObject();
-        data.putUtfString("source", COMMAND);
-        getApi().sendPublicMessage(room, sender, message, data);
+        double scale = DEFAULT_SCALE;
+        boolean showName = true;
+        if (params != null) {
+            if (params.containsKey("scale")) {
+                scale = params.getDouble("scale");
+            }
+            if (params.containsKey("showName")) {
+                showName = params.getBool("showName");
+            }
+        }
+
+        SFSObject payload = new SFSObject();
+        payload.putUtfString("senderId", sender.getName());
+        payload.putUtfString("message", message);
+        payload.putInt("bubbleId", getChatBalloonType(sender));
+        payload.putDouble("scale", scale);
+        payload.putBool("showName", showName);
+        send(EVENT, payload, room.getUserList());
 
         trace("[SPEECH_BROADCAST] user=" + sender.getName() + " room=" + room.getName());
     }
@@ -73,6 +90,13 @@ public class SpeechBroadcastHandler extends OsBaseHandler {
 
     private boolean canUserChat(User user) {
         return true;
+    }
+
+    private int getChatBalloonType(User user) {
+        if (user != null && user.containsVariable("chatBalloon")) {
+            return user.getVariable("chatBalloon").getIntValue();
+        }
+        return 1;
     }
 
     private void sendError(User user, String code, String message) {
