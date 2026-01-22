@@ -1328,6 +1328,10 @@ package com.oyunstudyosu.service
       {
          var header:String = "💬 [CHAT TRACE] " + kind + " dir=" + dir + " seq=" + currentSeq + " ts=" + ts;
          var detail:String = dataStr.length > 1000 ? dataStr.substr(0,1000) + "... (truncated)" : dataStr;
+         if(kind == "publicMessage" || kind == "privateMessage")
+         {
+            detail = detail + "\n" + buildChatEventDetails(payload);
+         }
          logHistory.push({
             "type":"CHAT_TRACE",
             "dir":dir,
@@ -1347,6 +1351,27 @@ package com.oyunstudyosu.service
          {
             trace("⚠️ Chat trace log error: " + e.message);
          }
+      }
+
+      private function buildChatEventDetails(payload:Object) : String
+      {
+         if(payload == null || payload["params"] == null)
+         {
+            return "🧩 CHAT_PARAMS: null";
+         }
+         var params:Object = payload["params"];
+         var sender:User = params["sender"] as User;
+         var room:Room = params["room"] as Room;
+         var msg:String = String(params["message"]);
+         var data:ISFSObject = params["data"] as ISFSObject;
+         return "🧩 CHAT_PARAMS {" +
+                "senderName=" + (sender ? sender.name : "null") +
+                ", senderId=" + (sender ? sender.id : "null") +
+                ", roomName=" + (room ? room.name : "null") +
+                ", roomId=" + (room ? room.id : "null") +
+                ", message=" + msg +
+                ", data=" + (data ? dumpSFSObject(data) : "{}") +
+                "}";
       }
 
       private function logChatCommand(direction:String, cmd:String, dataStr:String, room:Room) : void
