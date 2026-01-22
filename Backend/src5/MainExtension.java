@@ -43,6 +43,7 @@ public class MainExtension extends SFSExtension {
         registerHandler("chat.message", GlobalChatMessageHandler.class);
         registerHandler("globalchat.join", GlobalChatJoinHandler.class);
         registerHandler("globalchat.leave", GlobalChatLeaveHandler.class);
+        registerHandler("speech.broadcast", SpeechBroadcastHandler.class);
         registerHandler("chatballoon", ChatBalloonHandler.class);
         registerHandler("chatext", ChatExtensions.class);
         registerHandler("cachemgr", CacheManager.class);
