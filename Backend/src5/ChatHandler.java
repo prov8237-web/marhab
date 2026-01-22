@@ -1,58 +1,94 @@
 package src5;
 
 import com.smartfoxserver.v2.entities.User;
-import com.smartfoxserver.v2.entities.data.ISFSObject;
-import com.smartfoxserver.v2.entities.data.SFSObject;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import com.smartfoxserver.v2.entities.data.*;
 
 public class ChatHandler extends OsBaseHandler {
     
     @Override
     public void handleClientRequest(User sender, ISFSObject params) {
-        ChatService service = ChatServices.getService();
-        com.smartfoxserver.v2.entities.Room room = sender.getLastJoinedRoom();
-        String rawMessage = params != null && params.containsKey("message")
-            ? params.getUtfString("message")
-            : "";
-        ChatService.ChatResult result = service.processPublicMessage(sender, room, rawMessage);
-        if (!result.isSuccess()) {
-            sendError(sender, result.getRoomId(), result.getErrorCode(), result.getErrorMessage());
+        trace("[CHAT] Message from: " + sender.getName());
+        
+        // الحصول على الرسالة
+        String message = params.getUtfString("message");
+        long timestamp = params.getLong("ts");
+        
+        // التحقق من طول الرسالة (مطابق للكلاينت - 100 حرف)
+        if (message.length() > 100) {
+            message = message.substring(0, 100);
+        }
+        
+        // التحقق من الرسائل المحظورة
+        if (isSpamMessage(message)) {
+            trace("[CHAT] ❌ Blocked spam message from: " + sender.getName());
             return;
         }
-
-        ChatMessage chatMessage = result.getMessage();
-        if (room == null) {
-            sendError(sender, result.getRoomId(), "ROOM_NOT_FOUND", "Room is required for public chat");
+        
+        // التحقق من صلاحية المستخدم للشات
+        if (!canUserChat(sender)) {
+            trace("[CHAT] ❌ User not allowed to chat: " + sender.getName());
             return;
         }
-
-        SFSObject payload = service.buildNewPayload(chatMessage);
-        Collection<User> recipientCollection = room != null ? room.getUserList() : getParentExtension().getParentZone().getUserList();
-        List<User> recipients = new ArrayList<>(recipientCollection);
-        send("chat.public.message", payload, recipients);
-
-        SFSObject legacyPayload = service.buildLegacyPublicPayload(sender, chatMessage);
-        getApi().sendPublicMessage(room, sender, chatMessage.getMessage(), legacyPayload);
-
-        if (service.getConfig().isLegacyEventsEnabled()) {
-            send("publicMessage", legacyPayload, recipients);
-        }
-
-        trace("[CHAT_COMPAT] result=OK userId=" + chatMessage.getSenderId()
-            + " roomId=" + chatMessage.getRoomId()
-            + " messageId=" + chatMessage.getId()
-            + " type=" + chatMessage.getMessageType()
-            + " ts=" + chatMessage.getSentAt());
+        
+        // الحصول على نوع فقاعة الشات للمستخدم
+        int chatBalloon = getChatBalloonType(sender);
+        
+        // إعداد بيانات الرسالة للإرسال للجميع
+        SFSObject response = new SFSObject();
+        response.putUtfString("sender", sender.getName());
+        response.putUtfString("message", message);
+        response.putInt("chatBalloon", chatBalloon);
+        response.putLong("ts", timestamp);
+        
+        // إرسال الرسالة للغرفة الحالية - استخدام reply بدلاً من send
+        send("publicMessage", response, getParentExtension().getParentRoom().getUserList());
+        
+        trace("[CHAT] ✅ Message sent by " + sender.getName() + ": " + message);
     }
-
-    private void sendError(User user, String roomId, String code, String message) {
-        SFSObject error = new SFSObject();
-        error.putUtfString("errorCode", code);
-        error.putUtfString("message", message);
-        error.putUtfString("roomId", roomId);
-        send("chat.public.error", error, user);
-        trace("[CHAT_COMPAT] result=ERROR userId=" + user.getName() + " roomId=" + roomId + " code=" + code);
+    
+    private boolean isSpamMessage(String message) {
+        // التحقق من الرسائل المتكررة
+        if (message.length() < 2) {
+            return true;
+        }
+        
+        // التحقق من الأحرف المتكررة (8 مرات متتالية كحد أقصى)
+        char lastChar = ' ';
+        int repeatCount = 1;
+        
+        for (int i = 0; i < message.length(); i++) {
+            char currentChar = message.charAt(i);
+            
+            if (currentChar == lastChar) {
+                repeatCount++;
+                if (repeatCount >= 8) {
+                    return true; // رسالة سبام
+                }
+            } else {
+                repeatCount = 1;
+                lastChar = currentChar;
+            }
+        }
+        
+        return false;
+    }
+    
+    private boolean canUserChat(User user) {
+        // التحقق من صلاحية المستخدم
+        // يمكن التحقق من:
+        // 1. صلاحية VIP
+        // 2. صلاحية البان
+        // 3. صلاحية خاصة للشات
+        return true; // مؤقتاً جميع المستخدمين يمكنهم الشات
+    }
+    
+    private int getChatBalloonType(User user) {
+        // الحصول على نوع فقاعة الشات من متغيرات المستخدم
+        if (user.containsVariable("chatBalloon")) {
+            return user.getVariable("chatBalloon").getIntValue();
+        }
+        
+        // الافتراضي هو 1 (فقاعة عادية)
+        return 1;
     }
 }

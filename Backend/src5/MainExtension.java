@@ -1,6 +1,5 @@
 package src5;
 
-import com.smartfoxserver.v2.core.SFSEventType;
 import com.smartfoxserver.v2.extensions.SFSExtension;
 import com.smartfoxserver.v2.entities.User;
 import com.smartfoxserver.v2.entities.data.ISFSObject;
@@ -39,13 +38,11 @@ public class MainExtension extends SFSExtension {
         registerHandler("baseclothes", BaseClothesHandler.class);
         registerHandler("savebaseclothes", SaveBaseClothesHandler.class);
         registerHandler("roomjoincomplete", RoomJoinCompleteHandler.class);
-        registerHandler("chat.public.send", PublicChatHandler.class);
-        registerHandler("chat.whisper.send", WhisperChatHandler.class);
+        registerHandler("chat", ChatHandler.class);
+        registerHandler("whisper", WhisperHandler.class);
         registerHandler("chat.message", GlobalChatMessageHandler.class);
         registerHandler("globalchat.join", GlobalChatJoinHandler.class);
         registerHandler("globalchat.leave", GlobalChatLeaveHandler.class);
-        registerHandler("chat", ChatHandler.class); // compatibility layer for legacy clients
-        registerHandler("whisper", WhisperHandler.class); // compatibility layer for legacy clients
         registerHandler("chatballoon", ChatBalloonHandler.class);
         registerHandler("chatext", ChatExtensions.class);
         registerHandler("cachemgr", CacheManager.class);
@@ -175,8 +172,6 @@ registerHandler("restoredata", BackupHandler.class);
         
         // عرض جميع الـ commands المسجلة مصنفة
         printRegisteredCommandsByCategory();
-
-        addEventHandler(SFSEventType.PUBLIC_MESSAGE, PublicChatHandler.class);
         
         // تسجيل بدء التشغيل
         logSystemEvent("SERVER_START", "Extension initialized successfully");

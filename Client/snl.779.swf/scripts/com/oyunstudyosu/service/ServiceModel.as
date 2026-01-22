@@ -727,10 +727,6 @@ package com.oyunstudyosu.service
          logHistory.push(entry);
          liveEntry = "[" + ts + "] SEQ:" + currentSeq + " " + entryType + " - " + kind + "\n" + dataStr;
          writeToLiveFile(liveEntry);
-         if(isChatEvent(kind,payload))
-         {
-            logChatTrace(dir,kind,payload,dataStr,currentSeq,ts);
-         }
          try
          {
             if(logHistory.length % 100 == 0)
@@ -1047,11 +1043,6 @@ package com.oyunstudyosu.service
             "stack":new Error().getStackTrace() || "NO_STACK"
          };
          logHistory.push(entry);
-         logHistory.push(buildNetEntry("net_out",cmd,data,room));
-         if(isChatCommand(cmd))
-         {
-            logChatCommand("CLIENT_SEND",cmd,dataStr,room);
-         }
          writeToLiveFile("[CLIENT SEND] " + cmd + "\n" + dataStr);
          try
          {
@@ -1142,11 +1133,6 @@ package com.oyunstudyosu.service
             "latencyMs":latencyMs
          };
          logHistory.push(entry);
-         logHistory.push(buildNetEntry("net_in",cmd,respObj,null,(respObj && respObj.errorCode ? respObj.errorCode : null)));
-         if(isChatCommand(cmd))
-         {
-            logChatCommand("SERVER_RECV",cmd,responseStr,null);
-         }
          writeToLiveFile("[SERVER RECV] " + cmd + " (Latency: " + latencyMs + "ms)\n" + responseStr);
          try
          {
@@ -1302,163 +1288,6 @@ package com.oyunstudyosu.service
                a.description = ServiceErrorCode.getMessageById(respObj.errorCode);
                Dispatcher.dispatchEvent(new AlertEvent(a));
          }
-      }
-
-      private function isChatEvent(kind:String, payload:Object) : Boolean
-      {
-         if(kind == "publicMessage" || kind == "privateMessage")
-         {
-            return true;
-         }
-         if(kind == "extensionResponse" && payload && payload["params"] && payload["params"]["cmd"])
-         {
-            return isChatCommand(String(payload["params"]["cmd"]));
-         }
-         if(kind == "ExtensionRequest" && payload && payload["cmd"])
-         {
-            return isChatCommand(String(payload["cmd"]));
-         }
-         return false;
-      }
-
-      private function isChatCommand(cmd:String) : Boolean
-      {
-         return cmd == "chat" || cmd == "whisper" || cmd == "chat.public.send" || cmd == "chat.public.message" || cmd == "chat.whisper.send" || cmd == "chat.whisper.message" || cmd == "whispernotify" || cmd == "publicMessageLimitExceeded" || cmd == "chat.message" || cmd == "chat.sync" || cmd == "globalchat.join" || cmd == "globalchat.leave";
-      }
-
-      private function logChatTrace(dir:String, kind:String, payload:Object, dataStr:String, currentSeq:int, ts:String) : void
-      {
-         var header:String = "💬 [CHAT TRACE] " + kind + " dir=" + dir + " seq=" + currentSeq + " ts=" + ts;
-         var detail:String = dataStr.length > 1000 ? dataStr.substr(0,1000) + "... (truncated)" : dataStr;
-         if(kind == "publicMessage" || kind == "privateMessage")
-         {
-            detail = detail + "\n" + buildChatEventDetails(payload);
-         }
-         detail = detail + "\n" + buildFlowLine(dir,kind);
-         logHistory.push({
-            "type":"CHAT_TRACE",
-            "dir":dir,
-            "kind":kind,
-            "seq":currentSeq,
-            "ts":ts,
-            "data":detail
-         });
-         try
-         {
-            Cc.log("═════════════════════════════════════════════════════════════");
-            Cc.info(header);
-            Cc.log("📝 " + detail);
-            Cc.log("═════════════════════════════════════════════════════════════");
-         }
-         catch(e:Error)
-         {
-            trace("⚠️ Chat trace log error: " + e.message);
-         }
-      }
-
-      private function buildChatEventDetails(payload:Object) : String
-      {
-         if(payload == null || payload["params"] == null)
-         {
-            return "🧩 CHAT_PARAMS: null";
-         }
-         var params:Object = payload["params"];
-         var sender:User = params["sender"] as User;
-         var room:Room = params["room"] as Room;
-         var msg:String = String(params["message"]);
-         var data:ISFSObject = params["data"] as ISFSObject;
-         return "🧩 CHAT_PARAMS {" +
-                "senderName=" + (sender ? sender.name : "null") +
-                ", senderId=" + (sender ? sender.id : "null") +
-                ", roomName=" + (room ? room.name : "null") +
-                ", roomId=" + (room ? room.id : "null") +
-                ", message=" + msg +
-                ", data=" + (data ? dumpSFSObject(data) : "{}") +
-                "}";
-      }
-
-      private function logChatCommand(direction:String, cmd:String, dataStr:String, room:Room) : void
-      {
-         var roomName:String = !!room ? room.name : "null";
-         logHistory.push({
-            "type":"CHAT_COMMAND",
-            "direction":direction,
-            "command":cmd,
-            "room":roomName,
-            "data":dataStr.length > 1000 ? dataStr.substr(0,1000) + "... (truncated)" : dataStr
-         });
-         try
-         {
-            Cc.log("═════════════════════════════════════════════════════════════");
-            Cc.info("💬 [CHAT " + direction + "] cmd=" + cmd + " room=" + roomName);
-            if(dataStr.length > 500)
-            {
-               Cc.log("📝 " + dataStr.substr(0,500) + "... (truncated)");
-            }
-            else
-            {
-               Cc.log("📝 " + dataStr);
-            }
-            Cc.log("═════════════════════════════════════════════════════════════");
-         }
-         catch(e:Error)
-         {
-            trace("⚠️ Chat command log error: " + e.message);
-         }
-      }
-
-      private function buildFlowLine(dir:String, kind:String) : String
-      {
-         if(dir == "OUT")
-         {
-            return "🔁 FLOW: CLIENT → SERVER (" + kind + ")";
-         }
-         return "🔁 FLOW: SERVER → CLIENT (" + kind + ")";
-      }
-
-      private function buildNetEntry(direction:String, cmd:String, payload:Object, room:Room, errorCode:String = null) : Object
-      {
-         var meta:Object = buildPayloadMeta(payload);
-         return {
-            "type":direction,
-            "cmd":cmd,
-            "room":room != null ? room.name : null,
-            "payload":payload,
-            "payloadKeys":meta.keys,
-            "payloadTypes":meta.types,
-            "errorCode":errorCode
-         };
-      }
-
-      private function buildPayloadMeta(payload:Object) : Object
-      {
-         var keys:Array = [];
-         var types:Object = {};
-         if(payload != null)
-         {
-            for(var key:String in payload)
-            {
-               keys.push(key);
-               types[key] = getValueType(payload[key]);
-            }
-         }
-         return {
-            "keys":keys,
-            "types":types
-         };
-      }
-
-      private function getValueType(value:*) : String
-      {
-         if(value == null)
-         {
-            return "null";
-         }
-         if(value is Array)
-         {
-            return "Array";
-         }
-         return typeof value;
       }
       
       private function dumpSFSObject(obj:ISFSObject) : String
@@ -1770,9 +1599,6 @@ package com.oyunstudyosu.service
          var j:int;
          var changed:Array = event.params.changedVars as Array;
          var u:User = event.params.user as User;
-         var userVar:SFSUserVariable;
-         var varValue:*;
-         var varType:String;
          var i:int = 0;
          while(i < changed.length)
          {
@@ -1780,12 +1606,8 @@ package com.oyunstudyosu.service
             listeners = userVarList[key];
             try
             {
-               userVar = u != null ? u.getVariable(key) as SFSUserVariable : null;
-               varValue = userVar != null ? userVar.getValue() : null;
-               varType = userVar != null ? userVar.type : "null";
                Cc.log("👤 [USER VAR UPDATE] " + key + " for " + u.name);
-               Cc.log("🧩 [USER VAR DATA] {\"name\":\"" + key + "\",\"value\":" + safeStringify(varValue) + ",\"type\":\"" + varType + "\",\"user\":\"" + u.name + "\"}");
-               writeToLiveFile("[USER VAR] " + key + " for " + u.name + " value=" + safeStringify(varValue) + " type=" + varType);
+               writeToLiveFile("[USER VAR] " + key + " for " + u.name);
             }
             catch(e:Error)
             {
