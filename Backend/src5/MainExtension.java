@@ -41,6 +41,9 @@ public class MainExtension extends SFSExtension {
         registerHandler("roomjoincomplete", RoomJoinCompleteHandler.class);
         registerHandler("chat.public.send", PublicChatHandler.class);
         registerHandler("chat.whisper.send", WhisperChatHandler.class);
+        registerHandler("chat.message", GlobalChatMessageHandler.class);
+        registerHandler("globalchat.join", GlobalChatJoinHandler.class);
+        registerHandler("globalchat.leave", GlobalChatLeaveHandler.class);
         registerHandler("chat", ChatHandler.class); // compatibility layer for legacy clients
         registerHandler("whisper", WhisperHandler.class); // compatibility layer for legacy clients
         registerHandler("chatballoon", ChatBalloonHandler.class);
