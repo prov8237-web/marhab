@@ -727,6 +727,10 @@ package com.oyunstudyosu.service
          logHistory.push(entry);
          liveEntry = "[" + ts + "] SEQ:" + currentSeq + " " + entryType + " - " + kind + "\n" + dataStr;
          writeToLiveFile(liveEntry);
+         if(isChatEvent(kind,payload))
+         {
+            logChatTrace(dir,kind,payload,dataStr,currentSeq,ts);
+         }
          try
          {
             if(logHistory.length % 100 == 0)
@@ -1043,6 +1047,10 @@ package com.oyunstudyosu.service
             "stack":new Error().getStackTrace() || "NO_STACK"
          };
          logHistory.push(entry);
+         if(isChatCommand(cmd))
+         {
+            logChatCommand("CLIENT_SEND",cmd,dataStr,room);
+         }
          writeToLiveFile("[CLIENT SEND] " + cmd + "\n" + dataStr);
          try
          {
@@ -1133,6 +1141,10 @@ package com.oyunstudyosu.service
             "latencyMs":latencyMs
          };
          logHistory.push(entry);
+         if(isChatCommand(cmd))
+         {
+            logChatCommand("SERVER_RECV",cmd,responseStr,null);
+         }
          writeToLiveFile("[SERVER RECV] " + cmd + " (Latency: " + latencyMs + "ms)\n" + responseStr);
          try
          {
@@ -1287,6 +1299,83 @@ package com.oyunstudyosu.service
                a.alertType = "tooltip";
                a.description = ServiceErrorCode.getMessageById(respObj.errorCode);
                Dispatcher.dispatchEvent(new AlertEvent(a));
+         }
+      }
+
+      private function isChatEvent(kind:String, payload:Object) : Boolean
+      {
+         if(kind == "publicMessage" || kind == "privateMessage")
+         {
+            return true;
+         }
+         if(kind == "extensionResponse" && payload && payload["params"] && payload["params"]["cmd"])
+         {
+            return isChatCommand(String(payload["params"]["cmd"]));
+         }
+         if(kind == "ExtensionRequest" && payload && payload["cmd"])
+         {
+            return isChatCommand(String(payload["cmd"]));
+         }
+         return false;
+      }
+
+      private function isChatCommand(cmd:String) : Boolean
+      {
+         return cmd == "chat" || cmd == "whisper" || cmd == "chat.public.send" || cmd == "chat.public.message" || cmd == "chat.whisper.send" || cmd == "chat.whisper.message" || cmd == "whispernotify" || cmd == "publicMessageLimitExceeded";
+      }
+
+      private function logChatTrace(dir:String, kind:String, payload:Object, dataStr:String, currentSeq:int, ts:String) : void
+      {
+         var header:String = "💬 [CHAT TRACE] " + kind + " dir=" + dir + " seq=" + currentSeq + " ts=" + ts;
+         var detail:String = dataStr.length > 1000 ? dataStr.substr(0,1000) + "... (truncated)" : dataStr;
+         logHistory.push({
+            "type":"CHAT_TRACE",
+            "dir":dir,
+            "kind":kind,
+            "seq":currentSeq,
+            "ts":ts,
+            "data":detail
+         });
+         try
+         {
+            Cc.log("═════════════════════════════════════════════════════════════");
+            Cc.info(header);
+            Cc.log("📝 " + detail);
+            Cc.log("═════════════════════════════════════════════════════════════");
+         }
+         catch(e:Error)
+         {
+            trace("⚠️ Chat trace log error: " + e.message);
+         }
+      }
+
+      private function logChatCommand(direction:String, cmd:String, dataStr:String, room:Room) : void
+      {
+         var roomName:String = !!room ? room.name : "null";
+         logHistory.push({
+            "type":"CHAT_COMMAND",
+            "direction":direction,
+            "command":cmd,
+            "room":roomName,
+            "data":dataStr.length > 1000 ? dataStr.substr(0,1000) + "... (truncated)" : dataStr
+         });
+         try
+         {
+            Cc.log("═════════════════════════════════════════════════════════════");
+            Cc.info("💬 [CHAT " + direction + "] cmd=" + cmd + " room=" + roomName);
+            if(dataStr.length > 500)
+            {
+               Cc.log("📝 " + dataStr.substr(0,500) + "... (truncated)");
+            }
+            else
+            {
+               Cc.log("📝 " + dataStr);
+            }
+            Cc.log("═════════════════════════════════════════════════════════════");
+         }
+         catch(e:Error)
+         {
+            trace("⚠️ Chat command log error: " + e.message);
          }
       }
       
