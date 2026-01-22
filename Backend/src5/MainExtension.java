@@ -40,6 +40,14 @@ public class MainExtension extends SFSExtension {
         registerHandler("roomjoincomplete", RoomJoinCompleteHandler.class);
         registerHandler("chat", ChatHandler.class);
         registerHandler("whisper", WhisperHandler.class);
+        registerHandler("chat.message", GlobalChatMessageHandler.class);
+        registerHandler("globalchat.join", GlobalChatJoinHandler.class);
+        registerHandler("globalchat.leave", GlobalChatLeaveHandler.class);
+        registerHandler("speech.broadcast", SpeechBroadcastHandler.class);
+        registerHandler("barterrequest", BarterRequestHandler.class);
+        registerHandler("barterresponse", BarterResponseHandler.class);
+        registerHandler("bartercancel", BarterCancelHandler.class);
+        registerHandler("drop", DropHandler.class);
         registerHandler("chatballoon", ChatBalloonHandler.class);
         registerHandler("chatext", ChatExtensions.class);
         registerHandler("cachemgr", CacheManager.class);
