@@ -79,6 +79,11 @@ public class MainExtension extends SFSExtension {
         trace("🚶 Registering MOVEMENT handlers...");
         registerHandler("walkrequest", WalkRequestHandler.class);
         registerHandler("walkfinalrequest", WalkFinalRequestHandler.class);
+
+        // ==================== DROP & THROW HANDLERS ====================
+        trace("🎯 Registering DROP handlers...");
+        registerHandler("drop", DropHandler.class);
+        registerHandler("dropthrowaction", DropThrowActionHandler.class);
         
         // ==================== CLOTHES HANDLERS ====================
         trace("👕 Registering CLOTHES handlers...");
@@ -107,6 +112,66 @@ public class MainExtension extends SFSExtension {
         registerHandler("usedoor", UseDoorHandler.class);
         registerHandler("usehousedoor", UseHouseDoorHandler.class);
         registerHandler("useobjectdoor", UseObjectDoorHandler.class);
+
+        // ==================== SOCIAL & CHAT HANDLERS ====================
+        trace("💬 Registering SOCIAL handlers...");
+        registerHandler("messagedetails", MessageDetailsHandler.class);
+        registerHandler("privatechatlist", PrivateChatListHandler.class);
+        registerHandler("privatechatdeletegroup", PrivateChatDeleteGroupHandler.class);
+
+        // ==================== COMMERCE & BARTER HANDLERS ====================
+        trace("🛒 Registering COMMERCE handlers...");
+        registerHandler("purchase", PurchaseHandler.class);
+        registerHandler("flatpurchase", FlatPurchaseHandler.class);
+        registerHandler("exchangediamond", ExchangeDiamondHandler.class);
+        registerHandler("avatarsalescollect", AvatarSalesCollectHandler.class);
+        registerHandler("barterrequest", BarterRequestHandler.class);
+        registerHandler("barterresponse", BarterResponseHandler.class);
+        registerHandler("bartercancel", BarterCancelHandler.class);
+
+        // ==================== FARMING & GATHERING HANDLERS ====================
+        trace("🌾 Registering FARM handlers...");
+        registerHandler("farmimplantation", FarmImplantationHandler.class);
+        registerHandler("farmgather", FarmGatherHandler.class);
+        registerHandler("farmclean", FarmCleanHandler.class);
+        registerHandler("gatheritemsearch", GatherItemSearchHandler.class);
+        registerHandler("gatheritemcollect", GatherItemCollectHandler.class);
+
+        // ==================== INTERACTIVE OBJECT HANDLERS ====================
+        trace("🧩 Registering OBJECT handlers...");
+        registerHandler("changeobjectframe", ChangeObjectFrameHandler.class);
+        registerHandler("changeobjectlock", ChangeObjectLockHandler.class);
+
+        // ==================== PARTY ISLAND HANDLERS ====================
+        trace("🎲 Registering PARTY ISLAND handlers...");
+        registerHandler("partyIsland.rollDice", PartyIslandRollDiceHandler.class);
+        registerHandler("partyIsland.leave", PartyIslandLeaveHandler.class);
+
+        // ==================== TRANSFER & ITEMS HANDLERS ====================
+        trace("🎁 Registering TRANSFER handlers...");
+        registerHandler("transferrequest", TransferRequestHandler.class);
+        registerHandler("transferresponse", TransferResponseHandler.class);
+        registerHandler("giftcheckexchange", GiftCheckExchangeHandler.class);
+
+        // ==================== QUEST & CAMPAIGN HANDLERS ====================
+        trace("📜 Registering QUEST handlers...");
+        registerHandler("questaction", QuestActionHandler.class);
+        registerHandler("campaignquest", CampaignQuestHandler.class);
+
+        // ==================== MEDIA & UI HANDLERS ====================
+        trace("📺 Registering MEDIA handlers...");
+        registerHandler("startroomvideo", StartRoomVideoHandler.class);
+        registerHandler("usechatballoon", UseChatBalloonHandler.class);
+        registerHandler("randomwheel", RandomWheelHandler.class);
+
+        // ==================== MATCHMAKING & RESTRICTIONS ====================
+        trace("🧯 Registering MATCHMAKING handlers...");
+        registerHandler("matchmakingCancel", MatchmakingCancelHandler.class);
+        registerHandler("removeavatarrestriction", RemoveAvatarRestrictionHandler.class);
+
+        // ==================== DEBUG HANDLERS ====================
+        trace("🐞 Registering DEBUG handlers...");
+        registerHandler("debugcommand", DebugCommandHandler.class);
         
         // ==================== EMPTY/UTILITY HANDLERS ====================
         trace("🛠️ Registering UTILITY handlers...");
