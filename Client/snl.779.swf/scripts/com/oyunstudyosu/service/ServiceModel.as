@@ -1038,6 +1038,7 @@ package com.oyunstudyosu.service
          stats.capturedEntries++;
          entry = {
             "type":"SEND",
+            "dir":"CLIENT->SERVER",
             "command":cmd,
             "data":dataStr,
             "stack":new Error().getStackTrace() || "NO_STACK"
@@ -1126,6 +1127,7 @@ package com.oyunstudyosu.service
          }
          entry = {
             "type":"RECV",
+            "dir":"SERVER->CLIENT",
             "command":cmd,
             "data":responseStr,
             "errorCode":(respObj && respObj.errorCode ? respObj.errorCode : null),
@@ -1558,6 +1560,8 @@ package com.oyunstudyosu.service
          var j:int;
          var changed:Array = event.params.changedVars as Array;
          var r:Room = event.params.room as Room;
+         var roomVar:RoomVariable;
+         var roomValue:String;
          var i:int = 0;
          while(i < changed.length)
          {
@@ -1565,8 +1569,17 @@ package com.oyunstudyosu.service
             listeners = roomVarList[key];
             try
             {
-               Cc.log("🔄 [ROOM VAR UPDATE] " + key + " in " + r.name);
-               writeToLiveFile("[ROOM VAR] " + key + " in " + r.name);
+               roomVar = r.getVariable(key);
+               roomValue = roomVar != null ? safeStringify(roomVar.value) : "null";
+               logHistory.push({
+                  "type":"ROOM_VAR_UPDATE",
+                  "dir":"SERVER->CLIENT",
+                  "room":r.name,
+                  "var":key,
+                  "value":roomValue
+               });
+               Cc.log("🔄 [ROOM VAR UPDATE] " + key + " in " + r.name + " = " + roomValue);
+               writeToLiveFile("[ROOM VAR] " + key + " in " + r.name + " = " + roomValue);
             }
             catch(e:Error)
             {
@@ -1599,6 +1612,8 @@ package com.oyunstudyosu.service
          var j:int;
          var changed:Array = event.params.changedVars as Array;
          var u:User = event.params.user as User;
+         var userVar:UserVariable;
+         var userValue:String;
          var i:int = 0;
          while(i < changed.length)
          {
@@ -1606,8 +1621,17 @@ package com.oyunstudyosu.service
             listeners = userVarList[key];
             try
             {
-               Cc.log("👤 [USER VAR UPDATE] " + key + " for " + u.name);
-               writeToLiveFile("[USER VAR] " + key + " for " + u.name);
+               userVar = u.getVariable(key);
+               userValue = userVar != null ? safeStringify(userVar.value) : "null";
+               logHistory.push({
+                  "type":"USER_VAR_UPDATE",
+                  "dir":"SERVER->CLIENT",
+                  "user":u.name,
+                  "var":key,
+                  "value":userValue
+               });
+               Cc.log("👤 [USER VAR UPDATE] " + key + " for " + u.name + " = " + userValue);
+               writeToLiveFile("[USER VAR] " + key + " for " + u.name + " = " + userValue);
             }
             catch(e:Error)
             {
@@ -1713,11 +1737,29 @@ package com.oyunstudyosu.service
             return;
          }
          var vars:Array = [];
+         var payload:Object = {
+            "keys":keys,
+            "values":values
+         };
+         var payloadStr:String = safeStringify(payload);
          var i:int = 0;
          while(i < keys.length)
          {
             vars.push(new SFSRoomVariable(keys[i],values[i]));
             i++;
+         }
+         logHistory.push({
+            "type":"SET_ROOM_VAR",
+            "dir":"CLIENT->SERVER",
+            "data":payloadStr
+         });
+         writeToLiveFile("[SET_ROOM_VAR] " + payloadStr);
+         try
+         {
+            Cc.info("📤 [SET ROOM VAR] " + payloadStr);
+         }
+         catch(e0:Error)
+         {
          }
          sendTracked(new SetRoomVariablesRequest(vars),"SetRoomVariablesRequest",{
             "keys":keys,
@@ -1732,11 +1774,29 @@ package com.oyunstudyosu.service
             return;
          }
          var vars:Array = [];
+         var payload:Object = {
+            "keys":keys,
+            "values":values
+         };
+         var payloadStr:String = safeStringify(payload);
          var i:int = 0;
          while(i < keys.length)
          {
             vars.push(new SFSUserVariable(keys[i],values[i]));
             i++;
+         }
+         logHistory.push({
+            "type":"SET_USER_VAR",
+            "dir":"CLIENT->SERVER",
+            "data":payloadStr
+         });
+         writeToLiveFile("[SET_USER_VAR] " + payloadStr);
+         try
+         {
+            Cc.info("📤 [SET USER VAR] " + payloadStr);
+         }
+         catch(e1:Error)
+         {
          }
          sendTracked(new SetUserVariablesRequest(vars),"SetUserVariablesRequest",{
             "keys":keys,
