@@ -65,9 +65,8 @@ public class PublicChatHandler extends OsBaseHandler implements IServerEventHand
         legacyPayload.putUtfString("sender", sender.getName());
         legacyPayload.putUtfString("message", message);
         legacyPayload.putUtfString("roomId", room.getName());
-        if (data != null) {
-            legacyPayload.putSFSObject("data", data);
-        }
+        legacyPayload.putInt("chatBalloon", getChatBalloonType(sender));
+        legacyPayload.putLong("ts", extractTimestamp(data));
 
         Collection<User> recipients = room.getUserList();
         send(LEGACY_COMMAND, legacyPayload, new ArrayList<>(recipients));
@@ -81,6 +80,20 @@ public class PublicChatHandler extends OsBaseHandler implements IServerEventHand
         error.putUtfString("roomId", roomId);
         send("chat.public.error", error, user);
         trace("[CHAT_PUBLIC] result=ERROR userId=" + user.getName() + " roomId=" + roomId + " code=" + code);
+    }
+
+    private int getChatBalloonType(User user) {
+        if (user != null && user.containsVariable("chatBalloon")) {
+            return user.getVariable("chatBalloon").getIntValue();
+        }
+        return 1;
+    }
+
+    private long extractTimestamp(ISFSObject data) {
+        if (data != null && data.containsKey("ts")) {
+            return data.getLong("ts");
+        }
+        return System.currentTimeMillis();
     }
 
     private void traceLog(ChatMessage message, String result) {
